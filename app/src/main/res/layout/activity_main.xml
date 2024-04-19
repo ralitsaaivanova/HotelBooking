@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="#04375C">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="125dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:backgroundTint = "#FF4DA0DB"
+        android:text="Регистрация"
+        android:onClick="btnClickRegister"/>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignIn"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="115dp"
+        android:backgroundTint = "#FF4DA0DB"
+        android:text="Вход"
+        android:onClick="btnClickLogIn"/>
+
+
+</RelativeLayout>
