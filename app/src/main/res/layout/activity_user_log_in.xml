@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserLogInActivity"
+    android:background="#04375c">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="145dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="48dp"
+        android:text="Вход" />
+
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:textSize="13dp"
+        android:text="Потребителско име:" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/textUsername"
+        android:shape = "rectangle"
+        android:background = "@drawable/border"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUsername"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:textSize="13dp"
+        android:text="Парола:" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:shape = "rectangle"
+        android:textColor="@color/black"
+        android:background = "@drawable/border"
+        android:padding="10dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editPassword"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="Влизане"
+        android:onClick="loginUser"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="#04375c">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft ="80dp"
+        android:paddingRight="80dp"
+        android:textSize ="20sp"
+        android:text ="Регистрация"
+        android:backgroundTint="@color/blue"
+        android:onClick ="btnRegister"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:paddingStart ="120dp"
+        android:paddingEnd="115dp"
+        android:textSize ="20sp"
+        android:backgroundTint="@color/blue"
+        android:text ="Вход"
+        android:onClick ="btnLogin"/>
+
+
+
+</RelativeLayout>

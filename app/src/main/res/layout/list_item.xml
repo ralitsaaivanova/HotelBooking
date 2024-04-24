@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="390dp"
+    android:layout_height="250dp"
+    android:background="#B2C7D6">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:id="@+id/listImage"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textName"
+        android:text="Хотел: "
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/listImage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listName"
+        android:text="Име"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/textName"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLocation"
+        android:text="Местоположение: "
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/listImage"
+        android:layout_below="@id/textName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listLocation"
+        android:text="Място"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/textLocation"
+        android:layout_toRightOf="@id/listImage"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRoomType"
+        android:text="Тип стая: "
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/listImage"
+        android:layout_below="@+id/listLocation"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRoomType"
+        android:text="тип"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/textRoomType"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/listLocation"
+        />
+
+
+    <Button
+        android:id="@+id/makeReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/listRoomType"
+        android:layout_toEndOf="@id/listImage"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:backgroundTint="@color/blue"
+        android:text="Добавяне"
+        android:onClick="btnMakeReservation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceText"
+        android:text="Цена: "
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/listImage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listPrice"
+        android:text="00.00"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/priceText"
+        android:layout_below="@id/listImage"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+</RelativeLayout>
