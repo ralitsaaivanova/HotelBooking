@@ -18,12 +18,6 @@
             android:name=".activity.SuccessfulActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MakeReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.UserProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.AddHotelActivity"
             android:exported="false" />
         <activity
