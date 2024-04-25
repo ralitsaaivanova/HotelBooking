@@ -24,6 +24,13 @@ public class Hotel {
 
     }
 
+    public Hotel(String hotelName, String roomType, String location, double price) {
+        this.name=hotelName;
+        this.type_of_room = roomType;
+        this.location = location;
+        this.price=price;
+    }
+
     public int getId() {
         return id;
     }
@@ -71,4 +78,5 @@ public class Hotel {
     public void setImg(byte[] img) {
         this.img = img;
     }
+
 }

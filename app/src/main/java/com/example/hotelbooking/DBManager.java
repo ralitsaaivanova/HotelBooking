@@ -36,7 +36,6 @@ public class DBManager {
 
     public DBManager(){
 
-//        super(context,DATABASE_NAME,null,DATABASE_VERSION);
         try {
             connection = DriverManager.getConnection(url, user, pass);
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,

@@ -52,11 +52,11 @@ public class UserLogInActivity extends AppCompatActivity {
             Toast.makeText(this, "Username or Password is incorrect", Toast.LENGTH_SHORT).show();
         }else {
             if(currentUser.getUsername().equals("admin")){
-                startActivity(new Intent(this,AddHotelActivity.class));
+                startActivity(new Intent(UserLogInActivity.this,AddHotelActivity.class));
                 overridePendingTransition(0, 0);
             }else {
                 //            Toast.makeText(this, "Username and Password is correct", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, HomeActivity.class));
+                startActivity(new Intent(UserLogInActivity.this, HomeActivity.class));
 //                overridePendingTransition(0, 0);
             }
 
@@ -66,8 +66,8 @@ public class UserLogInActivity extends AppCompatActivity {
 
     //Метод, с който променяму статуса на потребителя, че вече се е логнал и го взимаме
     private User getCurrentUser(String username,String password){
-        db = new DBManager();
-        List<User> users = db.getAllUsers();
+            db = new DBManager();
+            List<User> users = db.getAllUsers();
 
         for (User user:users){
             String currentUsername = user.getUsername();

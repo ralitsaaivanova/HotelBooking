@@ -8,11 +8,16 @@ import android.view.View;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hotelbooking.DBManager;
 import com.example.hotelbooking.R;
+import com.example.hotelbooking.model.Hotel;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
 
     DBManager db;
 
@@ -23,15 +28,11 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         setContentView(R.layout.activity_main);
 
-//        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-//        StrictMode.setThreadPolicy(policy);
-
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().build();
+        StrictMode.setThreadPolicy(policy);
         db = new DBManager();
-    }
-//    public void startdbapp(View view){
-//        new DBManager(this).getWritableDatabase();
-//    }
 
+    }
 
 
     public void btnRegister(View view) {
@@ -43,4 +44,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, UserLogInActivity.class));
         overridePendingTransition(0, 0);
     }
+
+
+
 }
